@@ -1,5 +1,5 @@
-import { TemperatureUnit } from "../Thermometer/thermometerTypes.d.ts";
-import { getTemperatureInCelsius } from "../Thermometer/Utils.ts";
+import { TemperatureUnit } from "../thermometer/ThermometerTypes.d.ts";
+import { getTemperatureInCelsius } from "../thermometer/Utils.ts";
 
 export type ThresholdCallback = (message: string) => void;
 
@@ -42,7 +42,6 @@ export class Threshold {
         }
     };
 
-    // might want to make this a boolean to trigger callback outside of this function for test purposes
     checkTemperature(currentTemperature: number, unit: TemperatureUnit): void {
         if(!this.lastObservedTemp){
             this.updateLastObservedTemperature(currentTemperature, unit);

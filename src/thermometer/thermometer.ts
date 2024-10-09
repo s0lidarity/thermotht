@@ -1,6 +1,6 @@
-import { TemperatureUnit } from './ThermometerTypes.d.ts';
-import { Threshold } from '../threshold/Threshold.ts';
+import { Threshold } from "../threshold/Threshold.ts";
 import { getTemperatureInCelsius } from "./Utils.ts";
+import { TemperatureUnit } from "./ThermometerTypes.d.ts";
 
 class Thermometer {
     private currentTemperature: number = 0;
