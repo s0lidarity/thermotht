@@ -2,7 +2,7 @@
 
 Andrew Sobiesiak's submission for the Thermometer Take Home Test from Wizards of the Coast.
 
-Built with typescript and deno.
+Built with typescript and deno. I chose Typescript because I enjoy it and am currently most comfortable in Typescript. I chose Deno because I wanted to try the new Deno 2.0 and keep the package small and tidy.
 
 ## Commands
 
@@ -10,35 +10,27 @@ Built with typescript and deno.
 deno test
 ```
 
-Runs all test files in the repository.
+> Runs all test files in the repository
 
 ```bash
 deno test thermometer.test.ts 
 ```
 
-Runs only the thermometer specific tests
+> Runs only the thermometer specific tests
 
-```bash
-deno run thermometer.ts
-```
-
-Runs the thermometer class
-params:
-
-1. file with temperature change input separated by line
-
-
-Assumptions:
+## Assumptions
 
 1. the expected input matches the following format
 
-```text
-1.5 C
-1.0 C
--2.0 C
-```
+    ```text
+    1.5 C
+    1.0 C
+    -2.0 C
+    ```
 
-Each line contains one number followed by a 'C' or 'F' to indicate the unit of the measurement.
+    > **Note** Each line contains one number followed by a 'C' or 'F' to indicate the unit of the measurement.
 
-
-2. A threshold has been met/breached when a new temperature matches or exceeds the defined threshold
+2. Thresholds are inclusive limits. A threshold has been met/breached when a new temperature matches or exceeds the defined threshold.
+3. If there is a minimum fluctuation established, we do not update the temperature reading if a new temperature is smaller than the minimum fluctuation.
+4. Thresholds need a direction or else any number will trigger them.
+5. Minimum fluctuations are defined relative to freezing point. For example, a minimumFluctuation of 10F at 32F will equate to ~5.5C and a minimumFluctuation

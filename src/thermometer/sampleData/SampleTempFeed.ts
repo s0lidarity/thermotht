@@ -1,5 +1,6 @@
 // temperature feed celsius sample 1
 // for testing temp thresholds around freezing in celsius
+// should trigger 6 falling callbacks
 export const tfc1 = [
     "1.5 C",
     "1.0 C",
@@ -15,6 +16,7 @@ export const tfc1 = [
 
 // temperature feed celsius sample 2
 // for testing temp thresholds around boiling in celsius
+// should trigger 4 rising callbacks & 6 falling callbacks
 export const tfc2 = [
     "99.5 C",
     "99.0 C",
@@ -45,14 +47,15 @@ export const tfc3 = [
 
 // temperature feed fahrenheit sample 1
 // for testing temp thresholds around freezing in fahrenheit
+// should trigger 6 falling callbacks
 export const tff1 = [
-    "34.7 F",
-    "33.8 F",
+    "35.0 F",
+    "34.0 F",
     "33.0 F",
     "32.0 F",
-    "31.1 F",
+    "31.0 F",
     "32.0 F",
-    "31.1 F",
+    "31.0 F",
     "32.0 F",
     "33.0 F",
     "32.0 F",
