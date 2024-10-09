@@ -86,3 +86,16 @@ export const tff3 = [
     "-40.9 F",
     "-58.0 F",
 ];
+
+// temperature feed mixed sample 1
+// crosses freezing and boiling in each direction mixing C & F
+export const tfm1 = [
+    "1.5 C",
+    "0.5C",
+    "32.0 F",
+    "-1.0 C",
+    "33.8 F",
+    "209.0 F",
+    "102.0 C",
+    "210.0 F",
+]

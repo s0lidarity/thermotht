@@ -2,7 +2,7 @@ import { expect } from "jsr:@std/expect";
 import { 
     getTemperatureInCelsius, 
     getTemperatureInFahrenheit, 
-} from "./utils.ts";
+} from "./Utils.ts";
 
 Deno.test("Celcius to Fahrenheit", () => {
     let f = 32;

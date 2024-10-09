@@ -39,3 +39,6 @@ Assumptions:
 ```
 
 Each line contains one number followed by a 'C' or 'F' to indicate the unit of the measurement.
+
+
+2. A threshold has been met/breached when a new temperature matches or exceeds the defined threshold
