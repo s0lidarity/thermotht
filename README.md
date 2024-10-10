@@ -33,4 +33,4 @@ deno test thermometer.test.ts
 2. Thresholds are inclusive limits. A threshold has been met/breached when a new temperature matches or exceeds the defined threshold.
 3. If there is a minimum fluctuation established, we do not update the temperature reading if a new temperature is smaller than the minimum fluctuation.
 4. Thresholds need a direction or else any number will trigger them.
-5. Minimum fluctuations are defined relative to freezing point. For example, a minimumFluctuation of 10F at 32F will equate to ~5.5C and a minimumFluctuation
+5. Minimum fluctuations are defined by the unit specified by the threshold.
